@@ -1,1 +1,46 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
 
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <hr>
+  <a href="Breadcrumb.html">Breadcrumb</a>
+  <a href="Button.html">Button</a>
+  <a href="Checkbox.html">Checkbox</a>
+  <a href="Dropdown.html">Dropdown</a>
+  <a href="Footer.html">Footer</a>
+  <a href="LeftNav.html">Left Nav</a>
+  <a href="StandardTable.html">Standard Table</a>
+  <a href="Toggle.html">Toggle</a>
+  <a href="TypeRamp.html">Type Ramp</a>
+  <hr>
+  <a href="Documentation.html">Documentation</a>
+  <a href="Contact.html">Contact</a>
+  <hr>
+</div>
+
+<div id="main">
+  <h2>FXP</h2>
+  <p>Library of reusable HTML/CSS controls and components for prototyping.</p>
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; open library</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+     
+</body>
+</html> 
