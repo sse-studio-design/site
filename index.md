@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
 
-You can use the [editor on GitHub](https://github.com/sse-studio-design/site/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+</head>
+<body>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <hr>
+  <a href="Breadcrumb.html">Breadcrumb</a>
+  <a href="Button.html">Button</a>
+  <a href="Checkbox.html">Checkbox</a>
+  <a href="Dropdown.html">Dropdown</a>
+  <a href="Footer.html">Footer</a>
+  <a href="LeftNav.html">Left Nav</a>
+  <a href="StandardTable.html">Standard Table</a>
+  <a href="Toggle.html">Toggle</a>
+  <a href="TypeRamp.html">Type Ramp</a>
+  <hr>
+  <a href="Documentation.html">Documentation</a>
+  <a href="Contact.html">Contact</a>
+  <hr>
+</div>
 
-### Markdown
+<div id="main">
+  <h2>Enterprise Services Experience</h2>
+  <p>Library of reusable HTML/CSS controls and components.</p>
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; open library</span>
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sse-studio-design/site/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+     
+</body>
+</html> 
